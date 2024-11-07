@@ -18,77 +18,247 @@
 <body>
     <header>
         <h2 class="logo"><a href="#">Ouroui<span>Dev</span></a></h2>
-        <nav>
+        <nav id="desktop-nav">
             <ul>
-                <li><a href="#" class="main">Home</a></li>
+                <li><a href="#" class="home">Home</a></li>
                 <li><a href="#about" class="about">About</a></li>
                 <li><a href="#services" class="services">Services</a></li>
                 <li><a href="#qualif" class="qualif">Qualification</a></li>
-                <li><a href="#work" class="work">My Work</a></li>
+                <li><a href="#projects" class="projects">My projects</a></li>
                 <li><a href="#contact-me" class="contact-me">Contact us</a></li>
             </ul>
         </nav>
         <div class="header-btns">
             <button class="dark-mode">
-                <i class="bi bi-moon"></i>
-                <i class="bi bi-sun"></i>
+                <i id="moon-ico" class="bi bi-moon"></i>
+                <i id="sun-ico" class="sun bi bi-sun"></i>
             </button>
-            <a class="github" href="https://github.io/ourouimed" target="_blank" title="My github">Github</a>
+            <a class="social github" href="https://github.com/ourouimed" target="_blank" title="My github">Github</a>
         </div>
     </header>
     <ul class="social-bar">
-        <li><a href="https://instagram.com/ourouimed" class="instagram" target="_blank"></a></li>
-        <li><a href="https://x.com" class="x-twitter" target="_blank"></a></li>
-        <li><a href="https://wa.me/212706500330" class="whatsapp" target="_blank"></a></li>
-        <li><a href="" class="github" target="_blank"></a></li>
-        <li><a href="" class="linkedin" target="_blank"></a></li>
+        <li><a href="https://instagram.com/ourouimed" class="social instagram" target="_blank"></a></li>
+        <li><a href="https://x.com" class="social x-twitter" target="_blank"></a></li>
+        <li><a href="https://wa.me/212706500330" class="social whatsapp" target="_blank"></a></li>
+        <li><a href="" class="social github" target="_blank"></a></li>
+        <li><a href="" class="social linkedin" target="_blank"></a></li>
     </ul>
-    <section id="main" data-sec=".main">
+    <section id="home" data-sec=".home">
         <div class="text-sec">
-            <h4>hello <span>I'm</span></h4>
+            <span>hello I'm</span>
             <h2>Mohamed Amine <span>Ouroui</span></h2>
-            <h3>Frontend / blogger templates developper</h3>
+            <h4>Frontend / blogger templates developper</h4>
             <p>I build some Html css & js websites , and also <a href="https://blogger.com" target="_blank">blogger.com </a>templates</p>
-            <div class="main-btns">
-                <a href="#contact" class="contact"><i class="bi bi-send"></i>Contact me</a>
-            </div>
+            <a href="#contact" class="contact"><i class="bi bi-send"></i>Contact me</a>        
         </div>
         <div class="img-sec">
             <img src="media/main.png" alt="Main image">
         </div>
     </section>
+    <!--About Section-->
     <section id="about" data-sec=".about">
         <div class="img-sec">
             <img src="media/about.png" alt="About image">
         </div>
         <div class="text-section">
-            <h2>About <span>Me</span></h2>
-            <ul class="skills">
-                <li>
-                    <i class="fa-brands fa-html5"></i>
-                    HTML
-                </li>
-                <li>
-                    <i class="fa-brands fa-css3"></i>
-                    CSS
-                </li>
-                <li>
-                    <i class="fa-brands fa-js"></i>
-                    JavaScript
-                </li>
-                <li>
-                    <i class="fa-brands fa-blogger"></i>
-                    Blogger
-                </li>
-            </ul>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dignissimos beatae, animi quae saepe similique enim natus aperiam eveniet laudantium! Cupiditate voluptate labore officia nostrum iusto similique, accusantium quis non illum?</p>
+            <h1>About <span>Me</span></h1>
+            <h3>Ouroui Mohamed Amine</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex sed aliquam impedit consequuntur quisquam corporis, rem harum. Soluta tempora nulla quidem quos, dolor at ducimus eius, deserunt debitis reprehenderit nemo!</p>
             <a href="" class="download-cv"><i class="bi bi-download"></i>Download Cv</a>
         </div>
     </section>
-    <section id="services" data-sec=".services"></section>
-    <section id="qualif" data-sec=".qualif"></section>
-    <section id="work" data-sec=".work"></section>
-    <section id="contact-me" data-sec=".contact-me"></section>
+    <section id="services" data-sec=".services">
+        <h1>My <span>Services</span></h1>
+        <p>This What Can i do for your</p>
+        <div class="services-grid">
+            <div class="service-card">
+                <i class="bi bi-code-slash"></i>
+                <h3>Frontend web developpemnt</h3>
+                <p>websites Using HTML CSS JS , Bootsrap ..</p>
+            </div>
+            <div class="service-card">
+                <i class="bi bi-palette"></i>
+                <h3>Responsive Design</h3>
+                <p>Adaptable designs for all devices</p>
+            </div>
+            <div class="service-card">
+                <i class="bi bi-search"></i>
+                <h3>Seo freindly</h3>
+                <p>Seo terms Accepted</p>
+            </div>
+        </div>
+    </section>
+    <section id="qualif" data-sec=".qualif">
+        <div class="timeline exp">
+            <h1>Education</h1>
+            <div class="timeline-boxes">
+                <div class="box">
+                    <span>2022/2023</span>
+                    <h3>Bacalaureate Physical Science</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam iusto dolores nobis odit.</p>
+                </div>
+                <div class="box">
+                    <span>2022/2023</span>
+                    <h3>Bacalaureate Physical Science</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam iusto dolores nobis odit.</p>
+                </div>
+                <div class="box">
+                    <span>2022/2023</span>
+                    <h3>Bacalaureate Physical Science</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam iusto dolores nobis odit.</p>
+                </div>
+            </div>
+        </div>
+        <div class="timeline edu">
+            <h1>Education</h1>
+            <div class="timeline-boxes">
+                <div class="box">
+                    <span>2022/2023</span>
+                    <h3>Bacalaureate Physical Science</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam iusto dolores nobis odit.</p>
+                </div>
+                <div class="box">
+                    <span>2022/2023</span>
+                    <h3>Bacalaureate Physical Science</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam iusto dolores nobis odit.</p>
+                </div>
+                <div class="box">
+                    <span>2022/2023</span>
+                    <h3>Bacalaureate Physical Science</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam iusto dolores nobis odit.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="projects" data-sec=".projects">
+        <h1>My <span>Projects</span></h1>
+        <p>This is the work what i made</p>
+        <ul class="projects-nav">
+            <li data-cat="project-card" class="active">All</li>
+            <li data-cat="web">Websites</li>
+            <li data-cat="JsApps">Mini web Apps</li>
+            <li data-cat="blogger">blogger</li>
+        </ul>
+        <div class="projects-grid">
+            <div class="web project-card">
+                <div class="projects-img">
+                    <img src="./My-projects/Portfolio.png" alt="My portfolio">
+                </div>
+                <div class="projects-content">
+                    <ul class="projects-labels">
+                        <li>HTML</li><li>CSS</li><li>JS</li>
+                    </ul>
+                    <div class="project-info">
+                        <h3>Portfolio</h3>
+                        <div class="btns">
+                            <a href="" class="preview"></a>
+                            <a href="" class="social github"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="web project-card">
+                <div class="projects-img">
+                    <img src="./My-projects/eco.png" alt="Ecomerce website">
+                </div>
+                <div class="projects-content">
+                    <ul class="projects-labels">
+                        <li>HTML</li><li>CSS</li><li>JS</li>
+                    </ul>
+                    <div class="project-info">
+                        <h3>Digital Services website</h3>
+                        <div class="btns">
+                            <a href="" class="preview"></a>
+                            <a href="" class="social github"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="JsApps project-card">
+                <div class="projects-img">
+                    <img src="./My-projects/tasks.png" alt="To do Tasks">
+                </div>
+                <div class="projects-content">
+                    <ul class="projects-labels">
+                        <li>HTML</li><li>CSS</li><li>JS</li>
+                    </ul>
+                    <div class="project-info">
+                        <h3>To do list</h3>
+                        <div class="btns">
+                            <a href="" class="preview"></a>
+                            <a href="" class="social github"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="JsApps project-card">
+                <div class="projects-img">
+                    <img src="./My-projects/bac.png" alt="Bac Calculator">
+                </div>
+                <div class="projects-content">
+                    <ul class="projects-labels">
+                        <li>HTML</li><li>CSS</li><li>JS</li>
+                    </ul>
+                    <div class="project-info">
+                        <h3>Bac Calculator</h3>
+                        <div class="btns">
+                            <a href="" class="preview"></a>
+                            <a href="" class="social github"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="contact-me" data-sec=".contact-me">
+        <div class="contact-info">
+            <span>Contact us</span>
+            <h1>Get in <span>Touch</span></h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed qui aliquam possimus dolores voluptate, mollitia recusandae quidem dolorem veritatis error laboriosam illo porro beatae deleniti. Accusamus alias natus quod dicta.</p>
+            <ul class="my-info">
+                <li>
+                    <i class="bi bi-telephone"></i>
+                    <div>
+                        <h4>Phone Number</h4>
+                        +212706500330
+                    </div>
+                </li>
+                <li>
+                    <i class="bi bi-geo-alt"></i>
+                    <div>
+                        <h4>Location</h4>
+                        Salé , Morocco
+                    </div>
+                </li>
+                <li>
+                    <i class="bi bi-envelope"></i>
+                    <div>
+                        <h4>Email</h4>
+                        <a href="mailto:medtube835@gmail.com" target="_blank">medtube835@gmail.com</a>
+                    </div>
+                </li>
+                <li>
+                    <i class="fa-brands fa-github"></i>
+                    <div>
+                        <h4>My github</h4>
+                        <a href="https:/github.com/Ourouimed" target="_blank">Ourouimed</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="contact-form">
+            <form action="https://api.web3forms.com/submit" method="post">
+                <input type="hidden" name="access_key" value="fff822b3-e0fc-4179-b295-335be9b7ab51">
+                <div class="input-double">
+                  <input type="text" placeholder="Your name" name="name" required>
+                  <input type="email" placeholder="Your email"  name="email" required>
+                </div>
+                <input type="text" placeholder="Message Object" name="object">
+                <textarea name="message" placeholder="Your message here" required></textarea>
+                <button type="submit">Send message <i class="bi bi-send"></i></button>
+              </form>
+        </div>
+    </section>
     <script src="main.js"></script>
 </body>
 </html>

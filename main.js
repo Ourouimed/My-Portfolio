@@ -49,5 +49,21 @@ window.addEventListener("scroll", () => {
 });
 
 
-
-
+let ProjectsNavLi = document.querySelectorAll(".projects-nav li")
+let Projects = document.querySelectorAll(".project-card")
+ProjectsNavLi.forEach(nav => {
+  nav.addEventListener("click" , ()=>{
+    ProjectsNavLi.forEach(nav => {
+      nav.classList.remove("active")
+    })
+    nav.classList.add("active")
+    Projects.forEach(project =>{
+      if(project.classList.contains(nav.dataset.cat)){
+        project.style.display = "block"
+      }
+      else {
+        project.style.display = "none"
+      }
+    })
+  })
+})
