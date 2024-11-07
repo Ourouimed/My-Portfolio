@@ -1,5 +1,5 @@
 @media screen and (max-width : 1150px) {
-    .open-mobile-menu {
+    .open-mobile-nav {
         display: block;
     }
     #desktop-nav {
@@ -26,9 +26,9 @@
     #contact-me {
         grid-template-columns: 1fr;
     }
-    :root {
+    /* :root {
         --sides-padding-- : 5%;
-    }
+    } */
 }
 
 @media screen and (max-width : 600px){
@@ -49,7 +49,7 @@
 }
 
 @media screen and (max-width : 400px){
-    header .logo {
+    .logo {
         font-size: 1em;
     }
     .header-btns button {

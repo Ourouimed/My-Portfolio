@@ -35,11 +35,28 @@
                 <i id="sun-ico" class="sun bi bi-sun"></i>
             </button>
             <a class="social github" href="https://github.com/ourouimed" target="_blank" title="My github">Github</a>
-            <button class="open-mobile-menu">
+            <button class="open-mobile-nav">
                 <i class="bi bi-list"></i>
             </button>
         </div>
     </header>
+    <nav id="mobile-nav">
+        <div class="mobile-header">
+            <h2 class="logo"><a href="#">Ouroui<span>Dev</span></a></h2>
+            <button class="close-nav">
+                <i class="bi bi-x-lg"></i>
+            </button>
+        </div>
+        <ul class="mobile-menu">
+            <li><a href="#" class="home">Home</a></li>
+            <li><a href="#about" >About</a></li>
+            <li><a href="#services" >Services</a></li>
+            <li><a href="#qualif">Qualification</a></li>
+            <li><a href="#projects">My projects</a></li>
+            <li><a href="#contact-me">Contact us</a></li>
+        </ul>
+    </nav>
+
     <ul class="social-bar">
         <li><a href="https://instagram.com/ourouimed" class="social instagram" target="_blank"></a></li>
         <li><a href="https://x.com" class="social x-twitter" target="_blank"></a></li>
@@ -47,9 +64,10 @@
         <li><a href="" class="social github" target="_blank"></a></li>
         <li><a href="" class="social linkedin" target="_blank"></a></li>
     </ul>
+
     <section id="home" data-sec=".home">
         <div class="text-sec">
-            <span>hello I'm</span>
+            <span>hello <span>I'm</span></span>
             <h2>Mohamed Amine <span>Ouroui</span></h2>
             <h4>Frontend / blogger templates developper</h4>
             <p>I build some Html css & js websites , and also <a href="https://blogger.com" target="_blank">blogger.com </a>templates</p>
@@ -257,7 +275,7 @@
                   <input type="text" placeholder="Your name" name="name" required>
                   <input type="email" placeholder="Your email"  name="email" required>
                 </div>
-                <input type="text" placeholder="Message Object" name="object">
+                <input type="text" placeholder="Message Object" name="object" required>
                 <textarea name="message" placeholder="Your message here" required></textarea>
                 <button type="submit">Send message <i class="bi bi-send"></i></button>
               </form>

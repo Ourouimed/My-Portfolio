@@ -67,3 +67,16 @@ ProjectsNavLi.forEach(nav => {
     })
   })
 })
+
+// Mobile nav
+let MobileNavBtn = document.querySelector(".open-mobile-nav")
+let MobileNav = document.querySelector("#mobile-nav")
+let CloseNav = document.querySelector(".close-nav")
+
+MobileNavBtn.addEventListener("click" , ()=>{
+  MobileNav.classList.add("active")
+})
+
+CloseNav.addEventListener("click" , ()=>{
+  MobileNav.classList.remove("active")
+})
