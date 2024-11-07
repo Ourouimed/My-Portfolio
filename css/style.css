@@ -197,11 +197,11 @@ section {
     padding: 2rem var(--sides-padding--);
     overflow: hidden;
 }
-section:nth-child(2n) {
+section:nth-child(even) {
     background-color: var(--bgcolor1--);
 }
 
-section:nth-child(2n+1) {
+section:nth-child(odd) {
     background-color: var(--bgcolor2--);
 }
 
@@ -583,12 +583,14 @@ ul.projects-nav li:hover, ul.projects-nav li.active {
     transform: translateX(-100%);
     transition: transform .4s linear;
     box-shadow: 2px 0 2px #3331310a;
+    overflow: hidden;
 }
 .mobile-menu li a {
     text-decoration: none;
     font-size: 1.2EM;
     display: block;
     transition: .4s ease;
+    padding-top: 1em;
 }
 .mobile-menu li a:hover {
     color: var(--main-color--);
@@ -604,6 +606,27 @@ ul.projects-nav li:hover, ul.projects-nav li.active {
     border: none;
     font-size: 1.2em;
     cursor: pointer;
+}
+/* Social Mobile */
+.mobile-social li a {
+    text-decoration: none;
+    background: var(--Second-color--);
+    height: 2rem;
+    width: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.4rem;
+    transition: .4s ease;
+}
+.mobile-social {
+    display: flex;
+    gap: 0.3rem;
+    margin-top: 1rem;
+}
+.mobile-social li a:hover {
+    background : var(--main-color--);
+    color: white;
 }
 /* Main Dark Mode styles */
 .dark, .dark a, .dark i , .dark input , .dark textarea {
