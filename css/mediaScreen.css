@@ -49,9 +49,8 @@
 }
 
 @media screen and (max-width : 400px){
-    .logo {
+    header .logo {
         font-size: 1em;
-    }
     .header-btns button {
         font-size: .8em;
     }
