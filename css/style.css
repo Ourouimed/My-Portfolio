@@ -106,6 +106,7 @@ header.sticky {
     color : var(--main-color--);
 }
 
+
 .header-btns {
     display: flex;
     align-items: center;
@@ -149,6 +150,18 @@ header.sticky {
 }
 .dark .dark-mode #moon-ico {
     display: none;
+}
+
+
+.open-mobile-menu i {
+    font-size: 1.8em;
+}
+
+.open-mobile-menu {
+    display: none;
+    background: transparent;
+    border: none;
+    cursor: pointer;
 }
 
 
@@ -206,7 +219,7 @@ section:nth-child(2n) {
 }
 
 #home .img-sec {
-    width: 60vh;
+    width: 60vw;
     background: var(--main-color--);
     overflow: hidden;
     aspect-ratio: 1;
@@ -389,6 +402,8 @@ ul.projects-nav {
     display: flex;
     gap: 0.5rem;
     margin-bottom: .8rem;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .projects-nav li {
@@ -405,7 +420,7 @@ ul.projects-nav li:hover, ul.projects-nav li.active {
 }
 .projects-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit , minmax(180px ,23%));
+    grid-template-columns: repeat(auto-fit , minmax(250px ,2fr));
     gap: 0.5rem;
     justify-content:center ;
 }
@@ -479,6 +494,7 @@ ul.projects-nav li:hover, ul.projects-nav li.active {
     grid-template-columns: 1fr 1fr;
     align-items: center;
     gap: 0.8rem;
+    justify-content: center;
 }
 .contact-info > span, .contact-info > h1 span {
     color: var(--main-color--);
@@ -552,6 +568,9 @@ ul.projects-nav li:hover, ul.projects-nav li.active {
 }
 .dark {
     transition: background , color .4s ease-in-out;
+}
+.dark .project-card {
+    background: var(--bgcolor2--);
 }
 
 /* Animtions */

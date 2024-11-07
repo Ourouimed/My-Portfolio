@@ -1,0 +1,59 @@
+@media screen and (max-width : 1150px) {
+    .open-mobile-menu {
+        display: block;
+    }
+    #desktop-nav {
+        display: none;
+    }
+    .header-btns .github {
+        display: none;
+    }
+    .social-bar {
+        display: none;
+    }
+}
+
+@media screen and (max-width:800px){
+    #qualif {
+        FLEX-DIRECTION: COLUMN;
+    }
+    #home .img-sec {
+        width: 80vw;
+    }
+}
+
+@media screen and (max-width : 700px){
+    #contact-me {
+        grid-template-columns: 1fr;
+    }
+    :root {
+        --sides-padding-- : 5%;
+    }
+}
+
+@media screen and (max-width : 600px){
+    #home {
+        flex-direction: column-reverse;
+        padding: 20vh var(--sides-padding--);
+        gap: 1rem;
+    }
+    #home .img-sec {
+        width: 90%;
+    }
+    #about {
+        grid-template-columns: 1fr;
+    }
+    .services-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media screen and (max-width : 400px){
+    header .logo {
+        font-size: 1em;
+    }
+    .header-btns button {
+        font-size: .8em;
+    }
+        
+}
