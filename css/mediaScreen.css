@@ -2,6 +2,9 @@
     .open-mobile-nav {
         display: block;
     }
+    #mobile-nav{
+        display: block;
+    }
     #desktop-nav {
         display: none;
     }
@@ -26,15 +29,12 @@
     #contact-me {
         grid-template-columns: 1fr;
     }
-    /* :root {
-        --sides-padding-- : 5%;
-    } */
 }
 
 @media screen and (max-width : 600px){
     #home {
         flex-direction: column-reverse;
-        padding: 20vh var(--sides-padding--);
+        justify-content: center;
         gap: 1rem;
     }
     #home .img-sec {
