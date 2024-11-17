@@ -36,6 +36,7 @@
         flex-direction: column-reverse;
         justify-content: center;
         gap: 1rem;
+        padding-top: 20vh;
     }
     #home .img-sec {
         width: 90%;
